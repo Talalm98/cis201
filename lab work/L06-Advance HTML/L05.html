@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>L05.Advanced HTML</title>
+  <style>
+  table,th,td{
+  border:1px solid black;
+  }
+  </style>
+</head>
+<body>
+<h1>Student List</h1>
+<table>
+  <caption>Table 01:This is CIS 201 fake student list</caption>
+  <tr>
+  <th>Major</th>
+  <th width="50%">S.ID</th>
+  <th>S.Name</th>
+  <th colspan="2">S.Phone</th>
+  </tr>
+  <tr>
+    <td rowspan="4"width="50%"style="text-align:center">SE</td>
+    <td>123546</td>
+    <td>layla</td>
+    <td>05666666666</td>
+    <td>0599999999</td>
+  </tr>
+  <tr>
+  <td>123546</td>
+  <td>layla</td>
+  <td>05666666666</td>
+  <td>0599999999</td>
+</tr>
+<tr>
+<td>123546</td>
+<td>layla</td>
+<td colspan="2">05666666666</td>
+
+</tr>
+<tr>
+<td>123546</td>
+<td>layla</td>
+<td colspan="2">05666666666</td>
+<tr>
+  <td rowspan="4"width="50%"style="text-align:center">NSE</td>
+  <td>123546</td>
+  <td>layla</td>
+  <td>05666666666</td>
+  <td>0599999999</td>
+</tr>
+<tr>
+<td>123546</td>
+<td>layla</td>
+<td>05666666666</td>
+<td>0599999999</td>
+</tr>
+<tr>
+<td>123546</td>
+<td>layla</td>
+<td colspan="2">05666666666</td>
+
+</tr>
+<tr>
+<td>123546</td>
+<td>layla</td>
+<td colspan="2">05666666666</td>
+
+</tr>
+</table>
+
+<h2>Registeration Form</h2>
+<p>Please fill the registeration form if you wish to register</p>
+<table width="100%">
+  <form action="/action_page.php"method="post">
+  <tr>
+    <td width="50%">First Name</td>
+    <td width="50%"for="fname"><input type="text" id="fname" name="fname"></td>
+  </tr>
+  <tr>
+    <td width="50%">Last Name</td>
+    <td width="50%"for="lname"><input type="text" id="lname" name="lname"></td>
+</tr>
+<tr>
+  <td width="50%">Email</td>
+  <td width="50%"for="email"><input type="email" id="email" name="email"></td>
+</tr>
+<tr>
+  <td width="50%">Age</td>
+  <td width="50%"for="age"><input type="number" id="age" name="age"></td>
+<tr>
+  <td width="50%">Gender</td>
+  <td width="50%"for="gender"><input type="radio"id="male" name="male">Male<br>
+      <input type="radio"id="female" name="female">Female
+  </td>
+</tr>
+<tr>
+  <td width="50%">Major</td>
+  <td width="50%"for="major"><input type="radio"id="se" name="se">Software Engineering<br>
+      <input type="radio"id="nse" name="nse">Network Engineering and Security
+  </td>
+</tr>
+<tr>
+  <td width="50%">What is your favorite courses</td>
+  <td width="50%"for="course"><input type="text"id="wd" name="wd"value="WD">Web Design<br>
+      <input type="radio"id="bed" name="bed">Back End Development<br>
+      <input type="radio"id="pj" name="pj">Programming in Java<br>
+      <input type="radio"id="sec" name="sec">Security<br>
+  </td>
+
+</tr>
+<tr>
+  <td width="50%"> </td>
+  <td width="50%"><input type="submit"value="Submit Query"></td>
+
+</tr>
+</form>
+</table>
+</body>
+</html>
